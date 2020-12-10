@@ -1,0 +1,8 @@
+title: Account
+type: object
+x-tags:
+  - Account
+properties:
+  id:
+    type: string
+    x-go-custom-tag: form:"id"

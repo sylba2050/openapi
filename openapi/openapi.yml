@@ -1,0 +1,22 @@
+openapi: 3.0.0
+info:
+  title: Sample
+  version: '1.0'
+servers:
+  - url: 'http://localhost:8000'
+paths:
+  /me:
+    get:
+      summary: GetAccountInfo
+      tags:
+        - Account
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: ./models/Account.v1.yaml
+      operationId: get-me
+tags:
+  - name: Account

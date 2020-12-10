@@ -1,0 +1,5 @@
+domain/api_*
+domain/routers.go
+domain/README.md
+main.go
+Dockerfile
