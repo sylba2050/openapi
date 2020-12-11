@@ -2,7 +2,7 @@ version: '3'
 services:
   openapi-generator:
     image: groovy:jre8
-    command: groovy /project/gen1.groovy generate -i /local/openapi.yml -g MyCodegen -o /project --additional-properties=apiPath=domain,packageName=domain
+    command: groovy /project/gen1.groovy generate -i /local/openapi.yml -g MyCodegen -o /project --additional-properties=packageName=domain
     volumes:
       - ./openapi:/local
       - .:/project
