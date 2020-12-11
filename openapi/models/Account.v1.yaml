@@ -4,5 +4,5 @@ x-tags:
   - Account
 properties:
   id:
-    type: string
+    type: integer
     x-go-custom-tag: form:"id"
