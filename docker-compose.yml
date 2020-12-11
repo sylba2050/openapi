@@ -1,8 +1,8 @@
 version: '3'
 services:
   openapi-generator:
-    image: openapitools/openapi-generator-cli
-    command: generate -i /local/openapi.yml -g go-gin-server -o /project --additional-properties=packageName=domain,apiPath=domain
+    image: groovy:jre8
+    command: groovy /project/gen1.groovy generate -i /local/openapi.yml -g MyCodegen -o /project --additional-properties=apiPath=domain,packageName=domain
     volumes:
       - ./openapi:/local
       - .:/project
